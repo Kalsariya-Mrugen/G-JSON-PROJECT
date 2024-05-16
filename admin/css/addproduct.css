@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarr{
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.main-body{
+    width: 90%;
+    margin:20px auto;
+}
+#add_btn{
+    padding:10px 20px ;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+     border-radius: 11px;
+     transition: all 0.1s;
+     transform: translateY(0px);
+}
+#add_btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1px 0.4px;
+    transform: translateY(2.9px);
+}
