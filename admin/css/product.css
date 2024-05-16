@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarr{
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.main-body{
+    width: 90%;
+    margin:20px auto;
+}
+.table td{
+    width: calc(100%/6);
+}
+.table td img{
+    width: 100px;
+    height: 100px;
+}
+.table,h2{
+    text-align: center;
+}
+#btn_grp{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#btn_grp button{
+    outline: none;
+    background: transparent;
+    padding: 7px 9px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 4px;
+}
+#btn_grp button:active {
+    transform: translateY(2px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0.1px 0.4px;
+}

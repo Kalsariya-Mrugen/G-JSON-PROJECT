@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarr{
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+}
+.navbar-brand img{
+    width: 100px;
+}

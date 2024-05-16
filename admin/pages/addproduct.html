@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/addproduct.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="navbarr">
+    </div>
+
+    <div class="main-body">
+
+
+        <h2 id="main_header_of_add">Add Products</h2><br>
+        <div class="main-add-card">
+            <form method="post" enctype='multipart/form-data' class="add-card form-floating">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control " id="title" placeholder="helo" required>
+                    <label for="floatingInput">Name of product</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control floatingPassword " id="price" placeholder="price"
+                        required>
+                    <label for="floatingPassword">Price of Product</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <input type="number" class="form-control floatingPassword " id="Qunty" placeholder="Quantity"
+                        required>
+                    <label for="floatingPassword">Quantity In Product</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <textarea class="form-control floatingTextarea2" placeholder="Leave a comment here" id="desc"
+                        style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">General info about product</label>
+                </div><br>
+                <div class="form-floating">
+                    <textarea class="form-control floatingTextarea2" placeholder="Leave a comment here" id="ingre"
+                        style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">INGREDIENTS</label>
+                </div><br>
+                <div class="form-floating">
+                    <textarea class="form-control floatingTextarea2" placeholder="Leave a comment here" id="nutri"
+                        style="height: 100px" required></textarea>
+                    <label for="floatingTextarea2">NUTRITIONAL INFORMATION</label>
+                </div><br>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-select floatingSelectGrid" id="cata" required>
+                            <option selected hidden value="0">Open this select menu</option>
+                            <option value="Me_Time">Me Time</option>
+                            <option value="Get_Together">Get Together</option>
+                            <option value="Party_Time">Party Time</option>
+                            <option value="Save_Big">Save Big</option>
+                        </select><label for="floatingSelectGrid">Choose Categeroy Of Product</label>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <select class="form-select floatingSelectGrid" id="flavour" required>
+                            <option selected hidden value="0">Open this select menu</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Dry_Fruits">Dry Fruits</option>
+                            <option value="Indian_Traditional">Indian Traditional</option>
+                            <option value="Fruits">Fruits</option>
+                            <option value="International">International</option>
+                            <option value="LOTTE">LOTTE</option>
+                        </select><label for="floatingSelectGrid">Chooose Flavour Of Product</label>
+                    </div>
+                </div>
+                <br>
+
+                <div type="url" class="form-floating imgs-drop">
+                    <input class="form-control floatingin4" id="img" type="file" multiple><label for="floatingin4"
+                        required>Images Of Product</label>
+                </div><br>
+                <input id="add_btn" type="submit" value="ADD PRODUCT">
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="../js/addproduct.js" type="module"></script>
+
+</html>
