@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+/* menu page */
+.menuIcon,
+.menuCloseBtn {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.logo {
+   position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.menuImg img {
+    width: 85%;
+    margin-left: 25px;
+    margin-top: 70px;
+
+}
+
+.menuListWrap ul li a {
+    font-size: 55px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 100%;
+    padding: 13px 0px;
+}
+
+.menuListWrap ul li {
+    list-style: none;
+}
+
+.menuListWrap {
+    margin-top: auto;
+}
+
+.menuListWrap ul li a span {
+    font-size: 18px;
+    display: block;
+    text-align: right;
+    line-height: 100%;
+}
+.menuListWrap ul li a{
+    display: inline-block;
+}
+.menuSocialIconWrap ul li a{
+    color: #010101;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #010101;
+    border-radius: 25px;
+    padding: 5px 8px;
+    font-size: 24px;
+}
+.menuSocialIconWrap ul li{
+padding: 0 5px;
+}
+.contactHome a img{
+width: 30px;
+height: 30px;
+} 
+.menuListWrap{
+position: relative;
+} 
+.headerafter::after{
+content: "";
+position: absolute;
+width: 1px;
+height: 380px;
+background-color: #FFFFFF;
+top: 0;
+left: 370px;
+}
+.CustomerCare{
+position: relative;
+}
+.CustomerCareAfter::after{
+content: "";
+position: absolute;
+width: 1px;
+height: 70px;
+background-color: #000000;
+top: 0;
+left: 370px;
+} 
+
+/* heaher css  */
+
+
+
+.searchBoxInputField {
+/* position: relative; */
+width: 300px;
+margin: 20px;
+}
+
+.searchBoxInputField input {
+width: 100%;
+padding: 10px;
+padding-right: 40px; /* Space for the search icon */
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+.stickyIcon {
+position: absolute;
+right: 60px;
+top: 42%;
+transform: translateY(-50%);
+
+}
+.stickyIcon ul li{
+padding: 10px 0;
+list-style: none;
+
+}
+.searchIcon i{
+cursor: pointer;
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 500;
+background-color: #D73F3A;
+border-radius: 25px;
+padding: 6px 7px;
+}
+
+#searchpopup {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 1000;
+}
+
+.searchBoxWrap {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.searchBoxContainer {
+position: relative;
+background: white;
+padding: 20px;
+border-radius: 8px;
+z-index: 1001; /* Ensuring it's above the overlay */
+}
+
+.searchBoxOverLay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 1000;
+}
+
+.searchClose {
+margin-top: 10px;
+text-align: right;
+text-decoration: none;
+}
+  /* pages css */
+
+
+  .topBanner img{
+      width: 100%;
+  }
+
+ ul li{
+      list-style: none;
+  }
+
+   ul li a{
+      color: #000000;
+      text-decoration: none;
+  }
+  .breadcrumb img {
+      width: 20px;
+  }
+  .AboutHavmor img{
+      width: 80%;
+      
+  }
+  .redText{
+      color: #EC2423;
+  }
+  .Lotte{
+      position: relative;
+  }
+  .Vision::after{
+       content: "";
+      display: inline-block;
+       position: absolute;
+      top: 150px;
+      bottom: 0;
+      width: 1px;
+      height: 210px;
+      margin-left: 130px;
+      background: #CCCCCC;
+  }
+  .justify-Text{
+      text-align: justify;
+  }
+  /* form css */
+
+
+.fileSize{
+    font-size: xx-small;
+}
+input, select, textarea{
+    border: 0.5px solid #C5C5C5;
+    padding: 8px 50px;
+    border-radius: 25px;
+}
+#upload-file{
+    border: none;
+}
+    /* footer css */
+    .footer .customerCareInfo ul li a{
+      color: #faf6f6;
+      text-decoration: none;
+      border: 2px solid #FFF3EB;
+      border-radius: 25px;
+      padding: 5px 8px;
+      font-size: 24px;
+  }
+  .footer .customerCareInfo ul li{
+      list-style: none;
+      padding:0 5px;
+     
+  }
+  .footer  ul{
+      padding:0;
+  }
+  .footer  ul li{
+      list-style: none;
+      padding:2px 5px;
+  }
+  .footerCol h4,h3{
+      font-size: 14px;
+      font-weight: 500;
+      color: #FFFFFF;
+  }
+  .footer .customerCareInfo h4{
+      font-size: 14px;
+      font-weight: 500;
+      color: #FFFFFF;
+  }
