@@ -6,7 +6,7 @@ const Header = () => {
                 <div class="menuIcon">
                     <img src="https://www.havmor.com/themes/havmornew/images/menu-icon.png">
                 </div>
-                <div class="menuDetailsWrap" style="display: none; background-color: #A0D629; height: 100vh;">
+                <div class="menuDetailsWrap" style="display: none; background-color: #A0D629; min-height: 100vh;">
                     <div class="menuCloseBtn">
                         <img src="https://www.havmor.com/themes/havmornew/images/menu-close-img.webp">
                     </div>
@@ -17,7 +17,7 @@ const Header = () => {
                         <div class="menuListWrap col-8">
                             <div>
                                 <ul class="d-flex">
-                                    <div class="col-6 headerafter">
+                                    <div class="col-5 headerafter">
                                         <li><a href="#" class=""><span>CHOOSE YOUR</span> Flavour</a></li>
                                         <li class="surpriseme"><a href="index.html/#surpriseme">Surprise <span>ME</span></a></li>
                                         <li><a href="#">Meet our <span>SHOWRUNNERS</span></a></li>

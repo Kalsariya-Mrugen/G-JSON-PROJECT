@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     $(".menuCloseBtn").click(function(){
         $(".menuDetailsWrap").css("display", "none");
         $(".menuIcon").css("display", "block");
-        $(".stickyIcon").css("display", "block");
+        // $(".stickyIcon").css("display", "block");
+        $(".main-side-nav ").css("display", "block");
         $(".layout-content").css("display", "block");
         $("#footer").css("display", "block");
     });
@@ -16,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         $(".menuDetailsWrap").css("display", "block");
         $(".menuIcon").css("display", "none");
         $(".logo").css("display", "block");
-        $(".stickyIcon").css("display", "none");
+        // $(".stickyIcon").css("display", "none");
+        $(".main-side-nav ").css("display", "none");
         $(".layout-content").css("display", "none");
         $("#footer").css("display", "none");
     });
