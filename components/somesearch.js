@@ -4,7 +4,7 @@ document.querySelector('.main-side-nav').innerHTML=`
             <img src="https://www.havmor.com/themes/havmornew/images/search-icon.svg" alt="">
         </div>
         <div class="location_icon_sidebar">
-            <a href=""><img src="https://www.havmor.com/themes/havmornew/images/map-icon.svg" alt=""></a>
+            <a href="../pages/closeby.html"><img src="https://www.havmor.com/themes/havmornew/images/map-icon.svg" alt=""></a>
         </div>
         <div class="surprise_icon_sidebar">
             
