@@ -225,6 +225,10 @@ text-decoration: none;
   .justify-Text{
       text-align: justify;
   }
+
+  .contact-us{
+    height: 100%;
+  }
   /* form css */
 
 

@@ -61,7 +61,7 @@ const Header = () => {
             </div>
         </header>
     </div>
-    <div class="stickyIcon">
+    <div class="stickyIcon" style="display: none;>
         <ul>
             <li>
                 <a href="#" class="searchIcon" id="searchIcon">
