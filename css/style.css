@@ -124,6 +124,7 @@ box-sizing: border-box;
 position: absolute;
 right: 60px;
 top: 42%;
+z-index: 1;
 transform: translateY(-50%);
 
 }
