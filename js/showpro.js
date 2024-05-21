@@ -1,7 +1,7 @@
 import GetData from "../admin/components/get.js";
 
 const ui = (data) => {
-  document.querySelector(".showpro-info").innerHTML = "";
+  document.querySelector(".pro-image").innerHTML = "";
 
   data.map((ele, i) => {
     let box = document.createElement("div");
@@ -24,8 +24,8 @@ const ui = (data) => {
 };
 const Get = async () => {
   let res = await GetData("http://localhost:3000/products");
-  let data =await res;
-  ui(data);
+  
+  ui(res);
 };
 
 Get();
