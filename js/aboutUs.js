@@ -1,3 +1,3 @@
 import Footer from "../components/footer.js";
 
-document.getElementById("footer").innerHTML= Footer();
+document.getElementById("footer").innerHTML = Footer();
