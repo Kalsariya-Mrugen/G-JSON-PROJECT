@@ -1,3 +1,10 @@
+
+let logged=JSON.parse(sessionStorage.getItem('IsLogin'))||false;
+if(logged==false){
+    alert('First Verify that You Are Admin')
+    window.location.href="../pages/login.html"
+}
+
 const regex_valid=(data)=>{
     
     let run=/^(?=\s*$)/g.test(document.getElementById('username').value)

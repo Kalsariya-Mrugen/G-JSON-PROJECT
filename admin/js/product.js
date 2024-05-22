@@ -1,3 +1,11 @@
+let logged=JSON.parse(sessionStorage.getItem('IsLogin'))||false;
+if(logged==false){
+    alert('First Verify that You Are Admin')
+    window.location.href="../pages/login.html"
+}
+
+
+
 import DelData from "../components/del.js";
 import GetData from "../components/get.js";
 import navbar from "../components/navbar.js";
