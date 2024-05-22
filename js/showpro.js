@@ -24,7 +24,6 @@ const ui = (data) => {
 };
 const Get = async () => {
   let res = await GetData("http://localhost:3000/products");
-  
   ui(res);
 };
 
