@@ -8,8 +8,8 @@ body {
   background-color: #fffbf1;
 }
 
-#header{
-}
+/* #header{
+} */
 
 .main-img {
   width: 100%;
@@ -138,7 +138,7 @@ body {
   cursor: pointer;
 }
 
-#show{
+/* #show{
   color: black;
   display: flex;
   width: 100%;
@@ -149,12 +149,11 @@ body {
 #showing{
   width: 50%;
   margin: auto 20px;
-  float: right;
   height: 100%;
   background-color: burlywood;
 }
 
-#any::after{
+#showing::after{
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.208);
@@ -188,10 +187,10 @@ body {
   background-color: rgba(0, 0, 0, 0.208);
   width: 100%;
   height: 1px;
-}
+} */
 
-.secondbar {
-}
+/* .secondbar {
+} */
 
 .second-h2 {
   width: 100%;

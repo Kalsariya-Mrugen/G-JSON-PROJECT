@@ -68,7 +68,7 @@ const ing =(ingdata)=>{
     showni.setAttribute("id","showni")
 
 
-    let any2 =document.createElement("h3")
+    let any2 =document.createElement("a")
     any2.innerHTML="NUTRITIONAL INFORMATION"
     any2.setAttribute("id","any2")
     showni.append(any2)
