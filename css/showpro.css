@@ -148,38 +148,50 @@ body {
 
 #showing{
   width: 50%;
-  margin: auto 20px;
+  margin: auto 0;
   float: right;
   height: 100%;
-  background-color: burlywood;
+  padding: 0;
 }
 
 #any::after{
   content: "";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.208);
-  width: 5px;
-  height: 50px;
+  background-color: white;
+  width: 3px;
+  height:30px;
   left: 49.80%;
 }
 
 #any{
   float: right;
-  background-color: blue;
   color: black;
   margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
 }
 #showni{
   color: black;
   width: 50%;
-  background-color: bisque;
-  margin: auto 20px;
+  margin: auto 0;
+  height: 100%;
 }
 
 #any2{
-  background-color: aquamarine;
   color: black;
   margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: 100%;
+  padding:0 5%;
+
 }
 
 .showpro-info::after {
@@ -211,15 +223,18 @@ body {
 }
 
 #main {
-  margin: 20px 10px;
-  width: calc(100% * 100%);
+  margin: 20px 0;
+  width: 25%;
   height: 500px;
-  background-color: antiquewhite;
+  padding: 30px 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border-left: 1px solid black;
 }
-
+#main:first-child{
+  border-left: none;
+}
 #imgdiv {
   width: 100%;
   /* background-color: red; */
@@ -250,4 +265,19 @@ body {
   cursor: pointer;
   background-color: #f02635;
   text-transform: uppercase;
+}
+/*---------------------------------------*/
+.activeacteofnutri{
+  background-color: burlywood;
+}
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+#Real_content{
+  width: 60%;
+  margin:20px auto;
 }

@@ -51,14 +51,19 @@ Get()
 
 const ing =(ingdata)=>{
   document.querySelector(".ing").innerHTML=""
-
+  
   ingdata.map((ele,i)=>{
+    
     let show=document.createElement("div")
     show.setAttribute("id","show")
 
     let showing=document.createElement("div")
     showing.setAttribute("id","showing")
-
+    showing.addEventListener('click',()=>{
+      real_content.innerHTML=ele.ingre
+      any2.classList.remove('activeacteofnutri')
+      any.classList.add('activeacteofnutri')
+    })
     let any =document.createElement("h3")
     any.innerHTML="INGREDIENTS"
     any.setAttribute("id","any")
@@ -66,7 +71,11 @@ const ing =(ingdata)=>{
 
     let showni =document.createElement("h3")
     showni.setAttribute("id","showni")
-
+    showni.addEventListener('click',()=>{
+      real_content.innerHTML=ele.nutri
+      any.classList.remove('activeacteofnutri')
+      any2.classList.add('activeacteofnutri')
+    })
 
     let any2 =document.createElement("h3")
     any2.innerHTML="NUTRITIONAL INFORMATION"
@@ -79,9 +88,13 @@ const ing =(ingdata)=>{
     ingr.innerHTML=ele.ingre
     ingr.setAttribute("id","ingr")
 
+    let real_content=document.createElement('pre');
+    real_content.setAttribute('id','Real_content')
 
+    real_content.innerHTML=ele.ingre
+    any.classList.add('activeacteofnutri')
 
-    document.querySelector(".ing").append(show)
+    document.querySelector(".ing").append(show,real_content)
   })
 }
 
@@ -96,7 +109,7 @@ Get3()
 const ui2=(inf)=>{
   document.querySelector(".secondpro").innerHTML = "";
 
-  inf.map((ele,i)=>{
+  inf.splice(0,4).map((ele,i)=>{
     let main= document.createElement("div")
     main.setAttribute("id","main")
 
