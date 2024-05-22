@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf1;
+}
+
+#header{
+}
+
+.main-img {
+  width: 100%;
+}
+
+.head-img {
+  position: relative;
+}
+
+.me-time {
+  position: absolute;
+  top: 35%;
+  right: 28%;
+  color: white;
+}
+
+.me {
+  font-size: 70px;
+  line-height: 55px;
+  text-transform: initial;
+  position: relative;
+  text-shadow: -10px 20px 4px rgba(0, 0, 0, 0.386);
+}
+
+.me::after {
+  content: "";
+  width: 6.4px;
+  box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.386);
+  top: 76%;
+  left: 48.2%;
+  height: 20px;
+  position: absolute;
+  background-color: white;
+}
+
+.time {
+  position: absolute;
+  left: 41px;
+}
+
+.info {
+  font-size: 12px;
+  margin: 0px;
+  font-weight: 900;
+}
+
+.bi-arrow-left {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.atag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  width: 17%;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: white;
+}
+
+.showpro-info {
+  width: 100%;
+  position: relative;
+  /* background-color: red; */
+}
+
+/*.pro-image {
+  width: 50%;
+  height: 100px;
+  background-color: blue;
+} */
+
+#box {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#innerbox1 {
+  /* background-color: yellow; */
+  margin: 20px;
+  width: 50%;
+  padding: 90px;
+  text-align: center;
+}
+
+#pro-img {
+  width: 70%;
+}
+
+#innerbox2 {
+  width: 50%;
+  /* background-color: green; */
+}
+
+#title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ff5061;
+  /* background-color: yellow; */
+}
+
+#desc {
+  /* background-color: blue; */
+  width: 55%;
+  line-height: 28px;
+}
+
+#buybtn {
+  color: #ff5061;
+  border: 1px solid #ff5061;
+  border-radius: 25px;
+  padding: 0px 15px;
+  text-decoration: none;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#show{
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: yellow;
+}
+
+#showing{
+  width: 50%;
+  margin: auto 0;
+  float: right;
+  height: 100%;
+  padding: 0;
+}
+
+#any::after{
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 3px;
+  height:30px;
+  left: 49.80%;
+}
+
+#any{
+  float: right;
+  color: black;
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+#showni{
+  color: black;
+  width: 50%;
+  margin: auto 0;
+  height: 100%;
+}
+
+#any2{
+  color: black;
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: 100%;
+  padding:0 5%;
+
+}
+
+.showpro-info::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.208);
+  width: 100%;
+  height: 1px;
+}
+
+.secondbar {
+}
+
+.second-h2 {
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+  margin: 70px auto;
+  color: red;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.secondpro {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* background-color: green; */
+}
+
+#main {
+  margin: 20px 0;
+  width: 25%;
+  height: 500px;
+  padding: 30px 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-left: 1px solid black;
+}
+#main:first-child{
+  border-left: none;
+}
+#imgdiv {
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+}
+
+#pro {
+  width: 90%;
+  height: 315px;
+}
+
+#tit {
+  width: 100%;
+  font-size: 13px;
+  margin: 0px;
+  text-align: center;
+}
+
+#buybtn2 {
+  margin: auto;
+  color: #fff;
+  border: 1px solid #f02635;
+  border-radius: 25px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f02635;
+  text-transform: uppercase;
+}
+/*---------------------------------------*/
+.activeacteofnutri{
+  background-color: burlywood;
+}
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+#Real_content{
+  width: 60%;
+  margin:20px auto;
+}
