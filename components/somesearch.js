@@ -7,7 +7,7 @@ document.querySelector('.main-side-nav').innerHTML=`
             <a href="../pages/closeby.html"><img src="https://www.havmor.com/themes/havmornew/images/map-icon.svg" alt=""></a>
         </div>
         <div class="surprise_icon_sidebar">
-            <a href="./index.html/#surpriseme"><img src="https://www.havmor.com/themes/havmornew/images/sticky-icon3.svg" alt=""></a>
+            <a href="../index.html#surpriseme"><img src="https://www.havmor.com/themes/havmornew/images/sticky-icon3.svg" alt=""></a>
         </div>`
 document.querySelector('.main-search-page').innerHTML=`
 <div class="main-searchbar">
