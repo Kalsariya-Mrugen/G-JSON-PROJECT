@@ -138,6 +138,50 @@ body {
   cursor: pointer;
 }
 
+#show{
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: yellow;
+}
+
+#showing{
+  width: 50%;
+  margin: auto 20px;
+  float: right;
+  height: 100%;
+  background-color: burlywood;
+}
+
+#any::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.208);
+  width: 5px;
+  height: 50px;
+  left: 49.80%;
+}
+
+#any{
+  float: right;
+  background-color: blue;
+  color: black;
+  margin: 0;
+}
+#showni{
+  color: black;
+  width: 50%;
+  background-color: bisque;
+  margin: auto 20px;
+}
+
+#any2{
+  background-color: aquamarine;
+  color: black;
+  margin: 0;
+}
+
 .showpro-info::after {
   content: "";
   position: absolute;

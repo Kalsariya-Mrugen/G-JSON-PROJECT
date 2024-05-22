@@ -48,6 +48,51 @@ const Get = async () => {
 
 Get()
 
+
+const ing =(ingdata)=>{
+  document.querySelector(".ing").innerHTML=""
+
+  ingdata.map((ele,i)=>{
+    let show=document.createElement("div")
+    show.setAttribute("id","show")
+
+    let showing=document.createElement("div")
+    showing.setAttribute("id","showing")
+
+    let any =document.createElement("h3")
+    any.innerHTML="INGREDIENTS"
+    any.setAttribute("id","any")
+    showing.append(any)
+
+    let showni =document.createElement("h3")
+    showni.setAttribute("id","showni")
+
+
+    let any2 =document.createElement("h3")
+    any2.innerHTML="NUTRITIONAL INFORMATION"
+    any2.setAttribute("id","any2")
+    showni.append(any2)
+    
+    show.append(showing,showni)
+
+    let ingr=document.createElement("p")
+    ingr.innerHTML=ele.ingre
+    ingr.setAttribute("id","ingr")
+
+
+
+    document.querySelector(".ing").append(show)
+  })
+}
+
+const Get3 = async () => {
+  let res = await GetData(`http://localhost:3000/products?id=14e1`);
+  
+  ing(res);
+}
+
+Get3()
+
 const ui2=(inf)=>{
   document.querySelector(".secondpro").innerHTML = "";
 
