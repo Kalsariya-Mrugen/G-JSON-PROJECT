@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   background-color: #fffbf1;
 }
@@ -137,60 +141,68 @@ body {
   font-size: 15px;
   cursor: pointer;
 }
-
-/* #show{
+/*midel----------------------------*/
+#show {
   color: black;
   display: flex;
-  width: 100%;
-  height: 50px;
-  background-color: yellow;
+  background-color: #532B1E;
 }
 
-#showing{
-  width: 50%;
-  margin: auto 20px;
-  height: 100%;
-  background-color: burlywood;
+#showing {
+  color: black;
+  width: 49.5%;
+  margin: auto;
+  
 }
 
-#showing::after{
+#any::after{
   content: "";
+  width: 2px;
+  left: 101%;
+  top: 20%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.208);
-  width: 5px;
-  height: 50px;
-  left: 49.80%;
+  height: 60%;
+  position: absolute;
+  background-color:yellow;
 }
 
-#any{
-  float: right;
-  background-color: blue;
-  color: black;
-  margin: 0;
-}
 #showni{
-  color: black;
-  width: 50%;
-  background-color: bisque;
-  margin: auto 20px;
+  margin: 0;
+  width: 49.5%;
+  margin: auto;
+}
+
+
+
+#any {
+  margin: 0;
+  position: relative;
+  float: right;
+  height: 100%;
+  font-size: 20px;
+  padding: 30px;
+  cursor: pointer;
+  color: white;
 }
 
 #any2{
-  background-color: aquamarine;
-  color: black;
+  float: left;
   margin: 0;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 30px;
+  color: white;
 }
 
-.showpro-info::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.208);
-  width: 100%;
-  height: 1px;
-} */
+#any:hover{
+  background-color: #FF5061;
+}
 
-/* .secondbar {
-} */
+#any2:hover{
+  background-color: #FF5061;
+}
+
+/*midel-end*/
 
 .second-h2 {
   width: 100%;
@@ -210,15 +222,18 @@ body {
 }
 
 #main {
-  margin: 20px 10px;
-  width: calc(100% * 100%);
+  margin: 20px 0;
+  width: 25%;
   height: 500px;
-  background-color: antiquewhite;
+  padding: 30px 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border-left: 1px solid black;
 }
-
+#main:first-child {
+  border-left: none;
+}
 #imgdiv {
   width: 100%;
   /* background-color: red; */
@@ -249,4 +264,19 @@ body {
   cursor: pointer;
   background-color: #f02635;
   text-transform: uppercase;
+}
+/*---------------------------------------*/
+/* .activeacteofnutri{
+  background-color: burlywood;
+} */
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+#Real_content {
+  width: 60%;
+  margin: 20px auto;
 }

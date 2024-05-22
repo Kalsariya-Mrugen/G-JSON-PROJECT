@@ -7,8 +7,7 @@ document.querySelector('.main-side-nav').innerHTML=`
             <a href="../pages/closeby.html"><img src="https://www.havmor.com/themes/havmornew/images/map-icon.svg" alt=""></a>
         </div>
         <div class="surprise_icon_sidebar">
-            
-            <a href=""><img src="https://www.havmor.com/themes/havmornew/images/sticky-icon3.svg" alt=""></a>
+            <a href="./index.html/#surpriseme"><img src="https://www.havmor.com/themes/havmornew/images/sticky-icon3.svg" alt=""></a>
         </div>`
 document.querySelector('.main-search-page').innerHTML=`
 <div class="main-searchbar">
@@ -44,8 +43,10 @@ const get=async()=>{
     ui(realdata)
     if(realdata.length==0){
         console.log(123);
-        document.getElementById('sorted-search').innerHTML="Searched product Not Found.."
+        document.getElementById('sorted-search').innerHTML = "Searched product Not Found.."
+        
     }
+   
 }
 document.getElementById('d_search').addEventListener('input',get)
 document.querySelector('.search_icon_sidebar').addEventListener('click',()=>{
@@ -54,3 +55,6 @@ document.querySelector('.search_icon_sidebar').addEventListener('click',()=>{
 document.querySelector('#close_search').addEventListener('click',()=>{
     document.querySelector('.main-search-page').classList.add('hidden')
 })
+document.getElementById('search_icon_main_searchbar').addEventListener('click', () => {
+    document.getElementById('d_search').value= "";
+ })
