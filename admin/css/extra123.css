@@ -10,6 +10,7 @@
     top: 25vh;
     right: 0;
     padding: 10px 3% 10px 0;
+    z-index: 13;
 }
 .main-side-nav div{
     margin: 20px 0;
@@ -36,6 +37,7 @@
     width:35%;
     margin: auto;
     transform: translateY(70px);
+    
 }
 ::placeholder {
 color: white;

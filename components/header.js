@@ -19,7 +19,7 @@ const Header = () => {
                                 <ul class="d-flex">
                                     <div class="col-5 headerafter">
                                         <li><a href="#" class=""><span>CHOOSE YOUR</span> Flavour</a></li>
-                                        <li class="surpriseme"><a href="index.html/#surpriseme">Surprise <span>ME</span></a></li>
+                                        <li class="surpriseme"><a href="/index.html#surpriseme">Surprise <span>ME</span></a></li>
                                         <li><a href="#">Meet our <span>SHOWRUNNERS</span></a></li>
                                         <li><a href="#">Contest</a></li>
                                     </div>
@@ -74,7 +74,7 @@ const Header = () => {
                 </a>
             </li>
             <li>
-                <a href="./index.html/#surpriseme" class="searchIcon">
+                <a href="/index.html/#surpriseme" class="searchIcon">
                     <i class="bi bi-person-arms-up"></i>
                 </a>
             </li>

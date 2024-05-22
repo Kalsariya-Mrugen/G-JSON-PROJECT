@@ -275,3 +275,120 @@ input, select, textarea{
       font-weight: 500;
       color: #FFFFFF;
   }
+
+   /* index css */
+
+#bestsellers .ProductList .ProductListImgWrap a img{
+    width: 90%;
+}
+#bestsellers .ProductList p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+#bestsellers .buyNowBtn, #knowusbetter .buyNowBtn{
+    background-color: #EF000F;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 16px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#knowusbetter .buyNowBtn {
+    text-decoration: none;
+}
+
+.homeProductInfoSec{
+    position: relative;
+}
+ .homeProductInfoSecWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#knowusbetter{
+	height:100%;
+}
+#knowusbetter .homeProductInfoSec .homeProductInfoSecImg img{
+    width: 100%;
+}
+#knowusbetter .homeProductInfoSec h4{
+    color: #FFFFFF;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+.homeProductInfoContent{
+    padding: 20px 0;
+}
+.homeProductInfoContentBox{
+    margin-top: px;
+}
+.homeProductInfoContent{
+    margin-top: px;
+}
+.homeFormSecRight{
+    position: relative;
+}
+.formSecImg img{
+    width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.homeFormSecRight{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.homeFormSecRight .formWrap input, select{
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #EBEBEB;
+    border: none;
+ 
+}
+.homeFormSecRight ::placeholder{
+    color: #000000;
+    opacity: 1; /* Firefox */
+}
+.btnSubmit{
+    background-color: #EF000F;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+.btnSubmit:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+/* Base styling for the select element */
+
+.custom-select {
+    width: 100%;
+    padding: 8px 50px;
+    font-size: 16px;
+    border-radius: 25px;
+    padding-right: 40px; /* Extra space for the custom arrow */
+    box-sizing: border-box;
+    /* Combine background color and custom arrow */
+    background: #EBEBEB url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 20 20"><polygon points="0,0 10,10 20,0" fill="red"/></svg>') no-repeat right 20px center; /* Adjust the padding here */
+    background-size: 10px 10px;
+    border: none;
+    color: #000000;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
