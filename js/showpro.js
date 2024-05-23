@@ -1,5 +1,8 @@
 import GetData from "../admin/components/get.js";
+import co from "../components/checkout.js";
 import Footer from "../components/footer.js";
+document.querySelector('.checkouts').innerHTML=co()
+
 
 document.getElementById("footer").innerHTML = Footer();
 let ids = location.search.replace('?id=', '')
