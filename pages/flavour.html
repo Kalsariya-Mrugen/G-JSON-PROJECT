@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>demo33| Havmor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
     <style>
         /* Styles unchanged */
         * {
@@ -12,6 +16,53 @@
             margin: 0;
             padding: 0;
         }
+
+
+
+
+        /*swaipwer------------------------*/
+        html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
         
 
         .container {
@@ -93,7 +144,16 @@
             background-color: #d3002b;
         }
 
-        .slideshow-container {
+
+
+
+
+
+
+
+
+
+        /* .slideshow-container {
             max-width: auto;
             position: relative;
             height: 100%;
@@ -132,7 +192,14 @@
         .prev:hover,
         .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
-        }
+        } */
+
+
+
+
+
+
+
 
         .text {
             color: #f2f2f2;
@@ -243,7 +310,9 @@
             flex-wrap: wrap;
         }
 
-        @media only screen and (max-width: 600px) {
+
+        
+        /* @media only screen and (max-width: 600px) {
             .container {
                 flex-direction: column;
                 align-items: center;
@@ -279,7 +348,10 @@
                 font-size: 12px;
                 padding: 8px 16px;
             }
-        }
+        } */
+
+
+
 
         .Section {
 
@@ -320,7 +392,11 @@
 
 <body>
     <div class="rrow">
-        <div class="slideshow-container">
+
+
+
+
+        <!-- <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="https://www.havmor.com/sites/default/files/banners/product-new-banner-desktop.webp"
                     style="width:100%">
@@ -329,19 +405,41 @@
             <div class="mySlides fade">
                 <img src="https://www.havmor.com/sites/default/files/banners/website-banners-product-listing-desktop.webp"
                     style="width:100%">
-            </div>
+            </div> -->
 
             <!-- <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div> -->
-            <div class="dot-container">
+            <!-- <div class="dot-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+        </div> -->
+
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://www.havmor.com/sites/default/files/banners/product-new-banner-desktop.webp"
+                    style="width:100%">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://www.havmor.com/sites/default/files/banners/website-banners-product-listing-desktop.webp"
+                    style="width:100%">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+
+
     </div>
     
     <div class="Section">
@@ -469,7 +567,7 @@
 
     </div>
 
-    <script>
+    <!-- <script>
         var slideIndex = 0;
         showSlides();
 
@@ -511,7 +609,28 @@
                 flavorButtons.appendChild(btn);
             });
         }
-    </script>
+    </script> -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
 
 </body>
 
