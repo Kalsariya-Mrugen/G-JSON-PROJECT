@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.head-img {
+  position: relative;
+}
+
+.location_icon_sidebar a img,.surprise_icon_sidebar a img,.search_icon_sidebar img{
+    filter: none;
+  }

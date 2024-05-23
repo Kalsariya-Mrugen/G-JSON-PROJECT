@@ -21,7 +21,7 @@ const Header = () => {
                                         <li><a href="#" class=""><span>CHOOSE YOUR</span> Flavour</a></li>
                                         <li class="surpriseme"><a href="/index.html#surpriseme">Surprise <span>ME</span></a></li>
                                         <li><a href="../pages/meet.html">Meet our <span>SHOWRUNNERS</span></a></li>
-                                        <li><a href="#">Contest</a></li>
+                                        <li><a href="../pages/contest.html">Contest</a></li>
                                     </div>
                                     <div class="col-6 pt-5">
                                         <li><a href="../pages/aboutus.html">Know Us <span>BETTER</span></a></li>
