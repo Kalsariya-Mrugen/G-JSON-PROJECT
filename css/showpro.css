@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
   background-color: #fffbf1;
 }
 
-#header{
-}
+/* #header{
+} */
 
 .main-img {
   width: 100%;
@@ -36,10 +40,10 @@ body {
 
 .me::after {
   content: "";
-  width: 6.4px;
+  width: 8px;
   box-shadow: -10px 20px 4px rgba(0, 0, 0, 0.386);
-  top: 76%;
-  left: 48.2%;
+  top: 90%;
+  left: 49.90%;
   height: 20px;
   position: absolute;
   background-color: white;
@@ -47,7 +51,7 @@ body {
 
 .time {
   position: absolute;
-  left: 41px;
+  left: 43px;
 }
 
 .info {
@@ -137,73 +141,68 @@ body {
   font-size: 15px;
   cursor: pointer;
 }
-
-#show{
+/*midel----------------------------*/
+#show {
   color: black;
   display: flex;
-  width: 100%;
-  height: 50px;
-  background-color: yellow;
+  background-color: #532B1E;
 }
 
-#showing{
-  width: 50%;
-  margin: auto 0;
-  float: right;
-  height: 100%;
-  padding: 0;
+#showing {
+  color: black;
+  width: 49.5%;
+  margin: auto;
+  
 }
 
 #any::after{
   content: "";
+  width: 2px;
+  left: 101%;
+  top: 20%;
   position: absolute;
-  background-color: white;
-  width: 3px;
-  height:30px;
-  left: 49.80%;
+  height: 60%;
+  position: absolute;
+  background-color:white;
 }
 
-#any{
-  float: right;
-  color: black;
-  margin: 0;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 100%;
-}
 #showni{
-  color: black;
-  width: 50%;
-  margin: auto 0;
+  margin: 0;
+  width: 49.5%;
+  margin: auto;
+}
+
+
+
+#any {
+  margin: 0;
+  position: relative;
+  float: right;
   height: 100%;
+  font-size: 20px;
+  padding: 30px;
+  cursor: pointer;
+  color: white;
 }
 
 #any2{
-  color: black;
+  float: left;
   margin: 0;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  height: 100%;
-  padding:0 5%;
-
+  font-size: 20px;
+  cursor: pointer;
+  padding: 30px;
+  color: white;
 }
 
-.showpro-info::after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.208);
-  width: 100%;
-  height: 1px;
+#any:hover{
+  background-color: #FF5061;
 }
 
-.secondbar {
+#any2:hover{
+  background-color: #FF5061;
 }
+
+/*midel-end*/
 
 .second-h2 {
   width: 100%;
@@ -232,7 +231,7 @@ body {
   justify-content: space-evenly;
   border-left: 1px solid black;
 }
-#main:first-child{
+#main:first-child {
   border-left: none;
 }
 #imgdiv {
@@ -268,16 +267,33 @@ body {
 }
 /*---------------------------------------*/
 .activeacteofnutri{
-  background-color: burlywood;
+  background-color: #FF5061;
 }
 pre {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+#Real_content {
+  width: 60%;
+  margin: 20px auto;
+}
+.location_icon_sidebar a img,.surprise_icon_sidebar a img,.search_icon_sidebar img{
+  filter: none;
+}
+.main-side-nav{
+  top: 20vh;
 }
 #Real_content{
-  width: 60%;
-  margin:20px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  transition: all 0.5s;
+}
+.hide_real_content{
+  opacity: 0.5;
+}
+.show_real_content{
+  opacity: 1;
 }

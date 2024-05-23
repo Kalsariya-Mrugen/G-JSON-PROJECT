@@ -1,5 +1,5 @@
-const navbar=()=>{
-    return `
+const navbar = () => {
+  return `
     <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" href="../pages/admin.html"><img src="../img/Best-Brands-of-Ice-Creams-in-India-6.png" alt=""></a>
@@ -21,6 +21,6 @@ const navbar=()=>{
         </form>
       </div>
     </div>
-  </nav>`
-}
-export default navbar
+  </nav>`;
+};
+export default navbar;

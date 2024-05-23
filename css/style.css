@@ -10,6 +10,11 @@ body {
 }
 
 /* menu page */
+
+.menuWrap{
+  width: 100%;
+}
+
 .menuIcon,
 .menuCloseBtn {
   position: absolute;
@@ -265,7 +270,7 @@ h3 {
   font-weight: 500;
   color: #ffffff;
 }
-<<<<<<< HEAD
+
     /* footer css */
     .footer .customerCareInfo ul li a{
       color: #faf6f6;
@@ -414,3 +419,6 @@ h3 {
     -moz-appearance: none;
 }
 
+.row{
+  margin: 0;
+}
