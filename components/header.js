@@ -19,7 +19,7 @@ const Header = () => {
                                 <ul class="d-flex">
                                     <div class="col-5 headerafter">
                                         <li><a href="#" class=""><span>CHOOSE YOUR</span> Flavour</a></li>
-                                        <li class="surpriseme"><a href="/index.html#surpriseme">Surprise <span>ME</span></a></li>
+                                        <li class="surpriseme"><a href="../index.html#surpriseme">Surprise <span>ME</span></a></li>
                                         <li><a href="../pages/meet.html">Meet our <span>SHOWRUNNERS</span></a></li>
                                         <li><a href="../pages/contest.html">Contest</a></li>
                                     </div>
