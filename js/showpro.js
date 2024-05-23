@@ -2,7 +2,7 @@ import GetData from "../admin/components/get.js";
 import Footer from "../components/footer.js";
 
 document.getElementById("footer").innerHTML = Footer();
-
+let ids = location.search.replace('?id=', '')
 const ui = (data) => {
   document.querySelector(".pro-image").innerHTML = "";
 
@@ -40,7 +40,7 @@ const ui = (data) => {
   });
 };
 const Get = async () => {
-  let res = await GetData(`http://localhost:3000/products?id=14e1`);
+  let res = await GetData(`http://localhost:3000/products?id=${ids}`);
 
   ui(res);
 };
@@ -96,8 +96,9 @@ const ing = (ingdata) => {
   });
 };
 
+
 const Get3 = async () => {
-  let res = await GetData(`http://localhost:3000/products?id=14e1`);
+  let res = await GetData(`http://localhost:3000/products?id=${ids}`);
 
   ing(res);
 };
@@ -129,6 +130,9 @@ const ui2 = (inf) => {
     buybtn.setAttribute("id", "buybtn2");
 
     main.append(imgdiv, tit, buybtn);
+    main.addEventListener('click',()=>{
+      window.location.href=`../pages/showpro.html?id=${ele.id}`
+    })
     document.querySelector(".secondpro").append(main);
   });
 };
