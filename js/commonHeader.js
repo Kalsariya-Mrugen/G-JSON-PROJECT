@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // $(".stickyIcon").css("display", "block");
         $(".main-side-nav ").css("display", "block");
         $(".layout-content").css("display", "block");
+        $("#header").css("position", "static");
         $("#footer").css("display", "block");
     });
 
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // $(".stickyIcon").css("display", "none");
         $(".main-side-nav ").css("display", "none");
         $(".layout-content").css("display", "none");
+        $("#header").css("position", "fixed");
         $("#footer").css("display", "none");
     });
 

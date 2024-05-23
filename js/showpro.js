@@ -2,10 +2,14 @@ import GetData from "../admin/components/get.js";
 import co from "../components/checkout.js";
 import Footer from "../components/footer.js";
 document.querySelector('.checkouts').innerHTML=co()
+document.querySelector('.checkouts').classList.add('hidden')
+document.querySelector('.cancel-checkout img').addEventListener('click',()=>{
+  document.querySelector('.checkouts').classList.add('hidden')
 
-
+})
 document.getElementById("footer").innerHTML = Footer();
 let ids = location.search.replace('?id=', '')
+let idss = location.search.replace('?title=', '')
 const ui = (data) => {
   document.querySelector(".pro-image").innerHTML = "";
 
@@ -35,6 +39,9 @@ const ui = (data) => {
     let buybtn = document.createElement("button");
     buybtn.innerHTML = "Buy Now";
     buybtn.setAttribute("id", "buybtn");
+    buybtn.addEventListener('click',()=>{
+      document.querySelector('.checkouts').classList.remove('hidden')
+    })
 
     innerbox2.append(title, desc, buybtn);
 
@@ -46,6 +53,9 @@ const Get = async () => {
   let res = await GetData(`http://localhost:3000/products?id=${ids}`);
 
   ui(res);
+  let res1=await GetData(`http://localhost:3000/products?title=${idss}`);
+  if(res1.length>0){
+  ui(res1)}
 };
 
 Get();
@@ -104,6 +114,11 @@ const Get3 = async () => {
   let res = await GetData(`http://localhost:3000/products?id=${ids}`);
 
   ing(res);
+  let res1=await GetData(`http://localhost:3000/products?title=${idss}`);
+  if(res1.length>0){
+
+    ing(res1)
+  }
 };
 
 Get3();
