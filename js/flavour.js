@@ -27,6 +27,9 @@ const ui=(data)=>{
       
         sub_card.append(imgs,h3,p,button);
         card.append(sub_card);
+        card.addEventListener('click',()=>{
+            window.location.href=`../pages/showpro.html?id=${ele.id}`;
+        })
 
         document.querySelector('.p').append(card)
     })
