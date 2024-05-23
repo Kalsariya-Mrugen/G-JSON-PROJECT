@@ -70,7 +70,7 @@
             /* justify-content: space-between; */
             /* align-items: flex-start; */
 
-
+            width: 100%;
             /* margin: 0 auto; */
         }
 
@@ -305,8 +305,9 @@
         }
 
         .p {
-            max-width: 80%;
+            width: 80%;
             display: flex;
+            margin: 10px 0;
             flex-wrap: wrap;
         }
 
@@ -386,6 +387,9 @@
         .rrow{
             height: 500px;
         }
+        .fade:not(.show){
+            opacity: 1;
+        }
         
     </style>
 </head>
@@ -443,30 +447,26 @@
     </div>
     
     <div class="Section">
-        <span class="b"> Section flavour</span>
-        <span class="b"> Chocolate</span>
-        <span class="b"> Strawberry</span>
-        <span class="b"> Mango</span>
-        <span class="b"> Pistachio</span>
+        <span  class="b"><i class="bi bi-sliders"></i> Section flavour</span>
+        <span id="Me_Time" class="b"> Me Time</span>
+        <span id="Get_Together" class="b"> Get Together</span>
+        <span id="Party_Time" class="b"> Party Time</span>
+        <span id="Save_Big" class="b"> Save Big</span>
     </div>
 
-    <div class="container">
+    <div class="container1">
         <div class="select-flavour">
-            <h2>Select Flavours</h2>
-            <div class="sort-button">
-                <button onclick="sortFlavors()">Sort by Name</button>
-            </div>
-
             <div class="flavor-buttons" id="flavorButtons">
-                <button onclick="alert('Vanilla selected')">Vanilla</button>
-                <button onclick="alert('Chocolate selected')">Chocolate</button>
-                <button onclick="alert('Strawberry selected')">Strawberry</button>
-                <button onclick="alert('Mango selected')">Mango</button>
-                <button onclick="alert('Pistachio selected')">Pistachio</button>
+                <button id="Chocolate">Chocolate</button>
+                <button id="Dry_Fruits">Dry Fruits</button>
+                <button id="Indian_Traditional">Indian Traditional</button>
+                <button id="Fruits" >Fruits</button>
+                <button id="International" >International</button>
+                <button id="LOTTE">LOTTE</button>
             </div>
         </div>
         <div class="p">
-            <div class="product-section">
+            <!-- <div class="product-section">
                 <div class="product">
                     <img src="https://www.havmor.com/sites/default/files/styles/380x273/public/products/shahi-kesar-1.jpg?itok=enJsscdg"
                         alt="">
@@ -558,7 +558,7 @@
             </div>
 
 
-
+ -->
 
         </div>
 
@@ -595,7 +595,7 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 5 seconds
+            setInterval(showSlides, 8000); // Change image every 5 seconds
         }
 
         function sortFlavors() {
@@ -633,5 +633,5 @@
 
 
 </body>
-
+<script src="../js/flavour.js" type="module"></script>
 </html>
