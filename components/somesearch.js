@@ -24,10 +24,13 @@ import GetData from "../admin/components/get.js"
 document.querySelector('.main-search-page').classList.add('hidden')
 const ui=(data)=>{
     document.getElementById('sorted-search').innerHTML=""
-    data.slice(0, 5).map((ele,i)=>{
+    data.splice(0, 5).map((ele,i)=>{
         let p=document.createElement('p');
         p.setAttribute('id','Searched_items');
         p.innerHTML=ele.title
+        p.addEventListener('click',async ()=>{
+            window.location.href=`../pages/showpro.html?title=${ele.title}`
+        })
         document.getElementById('sorted-search').append(p)
         if(i==4){
             return 1
