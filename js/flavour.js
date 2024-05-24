@@ -23,7 +23,10 @@ const ui=(data)=>{
 
         let button=document.createElement('button');
         button.setAttribute('class','buy-button');
-        button.innerHTML="buy Now"
+        button.innerHTML = "buy Now"
+        button.addEventListener('click',()=>{
+            window.location.href=`../pages/cart.html?id=${ele.id}`
+        })
       
         sub_card.append(imgs,h3,p,button);
         card.append(sub_card);
