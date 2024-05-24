@@ -3,7 +3,7 @@ const co=()=>{
     <div class="main-checkout ">
         <div class="content-checkout rounded ">
             <div class="cancel-checkout"><img src="https://www.havmor.com/themes/havmornew/images/close-popup.webp" alt=""></div>
-            <h2 class="main-header-chekout mt-3 py-2">ENTER CITY
+            <h2 class="main-header-chekout text-center mt-3 py-2">ENTER CITY
             </h2>
             <div class="select_city y-2">
                 <select name="city" class="form-select w-50 mx-auto" aria-required="true" id="city">
