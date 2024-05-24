@@ -4,7 +4,7 @@ const ui=(data)=>{
     document.querySelector('.p').innerHTML=""
     console.log(data);
     let hio=data;
-    let devHi=hio.splice(0,count);
+    let devHi=hio.slice(0,count);
     console.log(count);
     devHi.map((ele)=>{
         let card=document.createElement('div')
@@ -49,7 +49,7 @@ const ui=(data)=>{
       div.append(span);
         div.addEventListener('click',()=>{
             count=count+8;
-            get()
+            ui(data)
         })
         document.querySelector('.p').append(div)
 }
