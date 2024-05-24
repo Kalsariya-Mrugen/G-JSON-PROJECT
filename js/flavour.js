@@ -1,8 +1,12 @@
 import GetData from "../admin/components/get.js";
-
+let count=8;
 const ui=(data)=>{
     document.querySelector('.p').innerHTML=""
-    data.map((ele)=>{
+    console.log(data);
+    let hio=data;
+    let devHi=hio.splice(0,count);
+    console.log(count);
+    devHi.map((ele)=>{
         let card=document.createElement('div')
         card.setAttribute('class','product-section');
 
@@ -33,9 +37,21 @@ const ui=(data)=>{
             window.location.href=`../pages/showpro.html?id=${ele.id}&isbuy=true`
         })
       
-
         document.querySelector('.p').append(card)
     })
+    let div=document.createElement('div');
+      div.setAttribute('id','load_more');
+
+
+      let span=document.createElement('span');
+      span.innerHTML=`<img src="https://www.havmor.com/themes/havmornew/images/loan-more.webp" alt="">
+      <span>Load-more</span>`
+      div.append(span);
+        div.addEventListener('click',()=>{
+            count=count+8;
+            get()
+        })
+        document.querySelector('.p').append(div)
 }
 
 const get=async()=>{
