@@ -3,13 +3,24 @@ import co from "../components/checkout.js";
 import Footer from "../components/footer.js";
 document.querySelector('.checkouts').innerHTML=co()
 document.querySelector('.checkouts').classList.add('hidden')
+let ishi=location.search.replace('&isbuy=', '').split('')
+
+let isbuy=ishi.splice(8,11)
+console.log(isbuy);
+if(isbuy[0]=="t"){
+document.querySelector('.checkouts').classList.remove('hidden')
+}
 document.querySelector('.cancel-checkout img').addEventListener('click',()=>{
   document.querySelector('.checkouts').classList.add('hidden')
 
 })
 document.getElementById("footer").innerHTML = Footer();
-let ids = location.search.replace('?id=', '')
-let idss = location.search.replace('?title=', '')
+let hi = location.search.replace('?id=', '')
+let ids= hi.split('&')[0]
+console.log(ids);
+let hii = location.search.replace('?title=', '')
+let idss= hii.split('&')[0]
+console.log(idss);
 const ui = (data) => {
   document.querySelector(".pro-image").innerHTML = "";
 

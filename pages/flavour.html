@@ -152,7 +152,7 @@
             text-align: center;
             text-decoration: none;
             display: block;
-            font-size: 16px;
+            font-size: 20px;
             cursor: pointer;
             transition: background-color 0.3s ease;
             border-radius: 5px;
@@ -161,7 +161,6 @@
         }
 
         .flavor-buttons button:hover {
-            background-color: #d3002b;
         }
 
 
@@ -328,8 +327,9 @@
         .p {
             width: 80%;
             display: flex;
-            margin: 10px 0;
+            padding: 10px 0;
             flex-wrap: wrap;
+            background-color: #fffbf1;
         }
         .atag {
   position: absolute;
@@ -435,10 +435,35 @@
         }
 
         .rrow{
-            height: 500px;
+            height: 470px;
         }
         .fade:not(.show){
             opacity: 1;
+        }
+        #cy img{
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            
+        }
+        #load_more{
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            font-size: 22px;
+            color: #d3002b;
+        }
+        #cy{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: auto;
+            width: 80%;
+        }
+        #cy span{
+            display: flex;
+            flex-direction: row;
         }
         #header{
             z-index: 101;
@@ -534,12 +559,13 @@
     <div class="container1">
         <div class="select-flavour">
             <div class="flavor-buttons" id="flavorButtons">
-                <button id="Chocolate">Chocolate</button>
-                <button id="Dry_Fruits">Dry Fruits</button>
-                <button id="Indian_Traditional">Indian Traditional</button>
-                <button id="Fruits" >Fruits</button>
-                <button id="International" >International</button>
-                <button id="LOTTE">LOTTE</button>
+                <button id="All"><span id="cy"><img  alt=""><span>All</span></span></button>
+                <button id="Chocolate"><span id="cy"><img  alt=""><span>Chocolate</span></span></button>
+                <button id="Dry_Fruits"><span id="cy"><img  alt=""><span>Dry Fruits</span></span></button>
+                <button id="Indian_Traditional"><span id="cy"><img  alt=""><span>Indian Traditional</span></span></button>
+                <button id="Fruits" ><span id="cy"><img  alt=""><span>Fruits</span></span></button>
+                <button id="International" ><span id="cy"><img  alt=""><span>International</span></span></button>
+                <button id="LOTTE"><span id="cy"><img  alt=""><span>LOTTE</span></span></button>
             </div>
         </div>
         <div class="p">
@@ -638,7 +664,7 @@
  -->
 
         </div>
-
+        
    
 
 
