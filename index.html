@@ -22,6 +22,37 @@
             .search_icon_sidebar img {
                 filter: brightness(0) saturate(100%) invert(100%);
             }
+            .checkoutBoxOverLay{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+            }
+            .content-checkout{
+                /* display: flex; */
+                width: 50%;
+                margin: auto !important;
+                position: fixed;
+              top: 30px;
+              left: 0;
+              right: 0;
+                background: #fff;
+                padding: 20px;
+                z-index: 1011;
+
+            }
+            .main-checkout{
+                position: relative;
+            }
+            .cancel-checkout{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
         </style>
 </head>
 <body>
@@ -31,6 +62,9 @@
     </div>
     <div class="main-side-nav">
         
+    </div>
+    <div class="checkouts text-center " style="display: none;">
+
     </div>
     <div class="layout-content">
        
@@ -100,7 +134,7 @@
                                 </a>
                             </div>
                             <p>Zulubar </p>
-                            <span class="buyNowBtn" id="buyNowBtn">BUY NOW</span>
+                            <span class="buyNowBtn">BUY NOW</span>
                         </li>
                         <li>
                             <div class="ProductListImgWrap">
@@ -109,7 +143,7 @@
                                 </a>
                             </div>
                             <p>Aam </p>
-                            <span class="buyNowBtn" id="buyNowBtn">BUY NOW</span>
+                            <span class="buyNowBtn">BUY NOW</span>
                         </li>
                         <li>
                             <div class="ProductListImgWrap">
@@ -118,7 +152,7 @@
                                 </a>
                             </div>
                             <p>Triple Chocolate </p>
-                            <span class="buyNowBtn" id="buyNowBtn">BUY NOW</span>
+                            <span class="buyNowBtn" >BUY NOW</span>
                         </li>
                         <li>
                             <div class="ProductListImgWrap">
@@ -127,7 +161,7 @@
                                 </a>
                             </div>
                             <p>Chocolate Cone </p>
-                            <span class="buyNowBtn" id="buyNowBtn">BUY NOW</span>
+                            <span class="buyNowBtn">BUY NOW</span>
                         </li>
     
                     </ul>

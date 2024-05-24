@@ -1,12 +1,12 @@
 const co=()=>{
     return `
-    <div class="main-checkout">
-        <div class="content-checkout">
+    <div class="main-checkout ">
+        <div class="content-checkout rounded ">
             <div class="cancel-checkout"><img src="https://www.havmor.com/themes/havmornew/images/close-popup.webp" alt=""></div>
-            <h2 class="main-header-chekout">ENTER CITY
+            <h2 class="main-header-chekout mt-3 py-2">ENTER CITY
             </h2>
-            <div class="select_city">
-                <select name="city" class="form-select" aria-required="true" id="city">
+            <div class="select_city y-2">
+                <select name="city" class="form-select w-50 mx-auto" aria-required="true" id="city">
                  <option value="" selected="selected">Select City</option>
                  <option value="Aligarh">Aligarh</option>
                  <option value="Ahmedabad">Ahmedabad</option>
@@ -66,9 +66,13 @@ const co=()=>{
                  <option value="Ajmer">Ajmer</option>
                  <option value="Jamnagar">Jamnagar</option>
              </select></div>
-             <h6>Your Order through Following options.</h6>
-             <div class="img-grp"><a target="_blank" href="https://www.zomato.com/"><img src="https://www.havmor.com/themes/havmornew/images/zomato.webp"  alt=""></a><a target="_blank" href="https://www.swiggy.com/"><img src="https://www.havmor.com/themes/havmornew/images/swiggy.webp" alt=""></a></div>
+             <h6 class="py-2">Your Order through Following options.</h6>
+             <div class="img-grp pt-3">
+                <a target="_blank" href="https://www.zomato.com/"><img src="https://www.havmor.com/themes/havmornew/images/zomato.webp"  alt=""></a>
+                <a target="_blank" href="https://www.swiggy.com/"><img src="https://www.havmor.com/themes/havmornew/images/swiggy.webp" alt=""></a>
+             </div>
         </div>
+        <div class="checkoutBoxOverLay"></div>
     </div>
     `
 }
