@@ -9,7 +9,7 @@ document.querySelector('.checkouts').innerHTML =co();
 
 let BuyNowButtons = document.getElementsByClassName("buyNowBtn");
 
-Array.from(BuyNowButtons).forEach(button => {
+Array.from(BuyNowButtons).map(button => {
     button.addEventListener("click", () => {
         // window.location.href = "thanksforReach.html";
         document.querySelector(".checkouts").style.display = "block";
