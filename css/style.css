@@ -90,7 +90,7 @@ body {
   height: 380px;
   background-color: #ffffff;
   top: 0;
-  left: 370px;
+  left: 40%;
 }
 .CustomerCare {
   position: relative;
@@ -102,7 +102,7 @@ body {
   height: 70px;
   background-color: #000000;
   top: 0;
-  left: 370px;
+  left: 40%;
 }
 
 /* heaher css  */
@@ -362,10 +362,9 @@ h3 {
     position: relative;
 }
 .formSecImg img{
-    width: 30%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    /* width: 30%; */
+    /* position: absolute; */
+    width: 100%;
 }
 .homeFormSecRight{
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
@@ -421,4 +420,10 @@ h3 {
 
 .row{
   margin: 0;
+}
+
+.ccare{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }

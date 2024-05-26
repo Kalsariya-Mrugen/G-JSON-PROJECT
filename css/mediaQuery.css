@@ -1,0 +1,155 @@
+
+/* Extra Small Devices (Phones): */
+@media (max-width: 576px){
+    .logo a img{
+        width: 110px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .menuWrap .menuIcon,
+    .menuCloseBtn {
+       
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .menuWrap .menuIcon img,
+    .menuCloseBtn img{
+        width: 60px;
+    }
+   form input,select{
+    width: 100%;
+   }
+   .headerafter::after{
+    display: none;
+   }
+   .menuListWrap ul li a{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 100%;
+    padding: 13px 0px;
+}
+.menuListWrap ul li a span {
+    font-size: 12px;
+    display: block;
+    text-align: right;
+    line-height: 100%;
+  }
+  .CustomerCareAfter::after{
+    display: none;
+ 
+  }
+  .menuCustomerCare .menuSocialIconWrap ul li a{
+        padding: 7px 9px;
+        color: black;
+  }
+  .ccare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Small Devices (Tablets): */
+ @media (min-width: 576px) and (max-width: 767px) {
+    .logo a img{
+        width: 150px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .menuWrap .menuIcon,
+    .menuCloseBtn {
+       
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .menuWrap .menuIcon img,
+    .menuCloseBtn img{
+        width: 75px;
+    }
+    .headerafter::after{
+        display: none;
+    }
+    .menuListWrap ul li a{
+        font-size: px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 100%;
+        padding: 13px 0px;
+    }
+    .menuListWrap ul li a span {
+        font-size: px;
+        display: block;
+        text-align: right;
+        line-height: 100%;
+      }
+ }
+
+ /* Medium Devices (Desktops and Tablets) */
+ @media (min-width: 768px) and (max-width: 991px) {
+    .logo a img{
+        width: 170px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .menuWrap .menuIcon,
+    .menuCloseBtn {
+       
+      position: absolute;
+      top: 20px;
+      left: 35px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .menuWrap .menuIcon img,
+    .menuCloseBtn img{
+        width: 80px;
+    }
+ }
+
+ /* Large Devices (Desktops): */
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .logo a img{
+        width: 230px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .menuWrap .menuIcon,
+    .menuCloseBtn {
+       
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .menuWrap .menuIcon img,
+    .menuCloseBtn img{
+        width: 100%;
+    }
+ }
+
+
+ @media (min-width: 1200px) and (max-width: 1399px) {}
+
+ @media (min-width: 1400px) and (max-width: 1599px) {}
