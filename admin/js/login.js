@@ -13,10 +13,10 @@ const check=(e)=>{
     final(user)
 }
 const final=async (user)=>{
-    let res= await GetData(`http://localhost:3000/admin?un=${user.email}`)
+    let res= await GetData(`https://havmor-server.onrender.com/admin?un=${user.email}`)
     console.log(res);
     if(res.length>0){
-        let res1=await GetData(`http://localhost:3000/admin?un=${user.email}&pass=${user.pass}`)
+        let res1=await GetData(`https://havmor-server.onrender.com/admin?un=${user.email}&pass=${user.pass}`)
         if(res1.length>0){
             alert(`Admin Kam pe lago`)
             sessionStorage.setItem('IsLogin',true)
@@ -26,9 +26,9 @@ const final=async (user)=>{
             alert(`Your username found but pass not match`)
         }
     }else{
-        let res2= await GetData(`http://localhost:3000/admin?email=${user.email}`)
+        let res2= await GetData(`https://havmor-server.onrender.com/admin?email=${user.email}`)
         if(res2.length>0){
-            let res3=await GetData(`http://localhost:3000/admin?email=${user.email}&pass=${user.pass}`)
+            let res3=await GetData(`https://havmor-server.onrender.com/admin?email=${user.email}&pass=${user.pass}`)
             if(res3.length>0){
                 alert(`Admin Kam pe lago`)
                 sessionStorage.setItem('IsLogin',true)

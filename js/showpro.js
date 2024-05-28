@@ -61,10 +61,10 @@ const ui = (data) => {
   });
 };
 const Get = async () => {
-  let res = await GetData(`http://localhost:3000/products?id=${ids}`);
+  let res = await GetData(`https://havmor-server.onrender.com/products?id=${ids}`);
 
   ui(res);
-  let res1=await GetData(`http://localhost:3000/products?title=${idss}`);
+  let res1=await GetData(`https://havmor-server.onrender.com/products?title=${idss}`);
   if(res1.length>0){
   ui(res1)}
 };
@@ -122,10 +122,10 @@ const ing = (ingdata) => {
 
 
 const Get3 = async () => {
-  let res = await GetData(`http://localhost:3000/products?id=${ids}`);
+  let res = await GetData(`https://havmor-server.onrender.com/products?id=${ids}`);
 
   ing(res);
-  let res1=await GetData(`http://localhost:3000/products?title=${idss}`);
+  let res1=await GetData(`https://havmor-server.onrender.com/products?title=${idss}`);
   if(res1.length>0){
 
     ing(res1)
@@ -167,7 +167,7 @@ const ui2 = (inf) => {
 };
 
 const Get2 = async () => {
-  let res = await GetData(`http://localhost:3000/products`);
+  let res = await GetData(`https://havmor-server.onrender.com/products`);
 
   ui2(res);
 };

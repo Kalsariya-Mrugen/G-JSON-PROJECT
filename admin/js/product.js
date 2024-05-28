@@ -38,7 +38,7 @@ const ui = (data) => {
     del_btn.setAttribute("id", "del_btn");
     del_btn.addEventListener("click", () => {
       alert(`Product ${ele.title} removed`);
-      DelData(`http://localhost:3000/products/${ele.id}`);
+      DelData(`https://havmor-server.onrender.com/products/${ele.id}`);
     });
     let edit_btn = document.createElement("button");
     edit_btn.innerHTML = `<i class="bi bi-pencil-square"></i>`;
@@ -55,7 +55,7 @@ const ui = (data) => {
   });
 };
 const Get = async () => {
-  let res = await GetData("http://localhost:3000/products");
+  let res = await GetData("https://havmor-server.onrender.com/products");
   ui(res);
 };
 Get();

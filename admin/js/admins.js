@@ -34,7 +34,7 @@ const uimaker=(data)=>{
         del_btn.setAttribute('id','del_btn')
         del_btn.addEventListener('click',()=>{
             alert(`Admin ${ele.un} removed`)
-            DelData(`http://localhost:3000/admin/${ele.id}`)
+            DelData(`https://havmor-server.onrender.com/admin/${ele.id}`)
         })
         let edit_btn=document.createElement('button');
         edit_btn.innerHTML=`<i class="bi bi-pencil-square"></i>`
@@ -51,7 +51,7 @@ const uimaker=(data)=>{
     })
 }
 const Get=async()=>{
-    let res=await GetData('http://localhost:3000/admin')
+    let res=await GetData('https://havmor-server.onrender.com/admin')
     if(res.length==0){
         document.querySelector('.main-body').innerHTML="No Admin Exist Still<br> Username:admin<br>PassWord:admin@123<br> wroks"
     }

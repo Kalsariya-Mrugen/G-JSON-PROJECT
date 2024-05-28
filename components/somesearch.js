@@ -39,7 +39,7 @@ const ui=(data)=>{
 }
 GetData
 const get=async()=>{
-    let res=await GetData('http://localhost:3000/products')
+    let res=await GetData('https://havmor-server.onrender.com/products')
     let values_hi=document.getElementById('d_search').value;
     let realdata= await res.filter((ele)=>ele.title.toLowerCase().includes(values_hi.toLowerCase()))
     console.log(realdata);

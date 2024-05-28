@@ -17,11 +17,12 @@ import UpdateData from "../components/update.js";
 let imgs = []
 const isExisted = async (data) => {
   console.log(data);
-  let res = await fetch(`http://localhost:3000/products?title=${data.title}`)
+  let res = await fetch(`https://havmor-server.onrender.com/products?title=${data.title}`)
   let dataa = await res.json();
 
   if (dataa.length == 0) {
-    PostData('http://localhost:3000/products', data)
+    PostData('https://havmor-server.onrender.com/products', data)
+    window.location.href="../pages/admin.html"
   }
   else {
     alert('This Named Product Already Exists')
@@ -62,8 +63,9 @@ const calca = (e) => {
 }
 else
 {   
-UpdateData(`http://localhost:3000/products/${id}`,product)
-window.location.href="../pages/product.html"}
+UpdateData(`https://havmor-server.onrender.com/products/${id}`,product)
+alert('hi')
+setTimeout((window.location.href="../pages/product.html"),2000)}
 
   
 }
@@ -98,7 +100,7 @@ document.getElementById('img').addEventListener('change', () => {
 const get=async()=>{
   if(id!=''){
     alert(id)
-  let res=await GetData(`http://localhost:3000/products/${id}`)
+  let res=await GetData(`https://havmor-server.onrender.com/products/${id}`)
   document.getElementById('title').value=res.title
    document.getElementById('price').value=res.price
      document.getElementById('Qunty').value=res.Qunty

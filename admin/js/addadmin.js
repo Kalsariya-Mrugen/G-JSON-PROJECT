@@ -113,14 +113,14 @@ const calc=(e)=>{
         else
     {   
         if(document.getElementById('password').value==document.getElementById('c_pass').value){
-        UpdateData(`http://localhost:3000/admin/${id}`,user)
+        UpdateData(`https://havmor-server.onrender.com/admin/${id}`,user)
         window.location.href="../pages/admins.html"}
     }
     }
 const isexisted=async (data)=>{
-    let res2=await fetch(`http://localhost:3000/admin?un=${document.getElementById('username').value}`)
+    let res2=await fetch(`https://havmor-server.onrender.com/admin?un=${document.getElementById('username').value}`)
     let isUn=await res2.json()
-    let res1=await fetch(`http://localhost:3000/admin?email=${document.getElementById('email').value}`)
+    let res1=await fetch(`https://havmor-server.onrender.com/admin?email=${document.getElementById('email').value}`)
     let isEmail=await res1.json();
     if(isUn.length>0){
         regex_un(true)
@@ -137,7 +137,7 @@ const isexisted=async (data)=>{
     }
 }
 const postUser=(data)=>{
-    fetch('http://localhost:3000/admin',{
+    fetch('https://havmor-server.onrender.com/admin',{
         method:"POST",
         headers:{"Content-Type":"Applicatin/json"},
         body:JSON.stringify(data)
@@ -150,7 +150,7 @@ const postUser=(data)=>{
 const check=async()=>{
 
     if(id!=''){
-        let res=await GetData(`http://localhost:3000/admin?id=${id}`)
+        let res=await GetData(`https://havmor-server.onrender.com/admin?id=${id}`)
         console.log(res);
         document.getElementById('validationCustom01').value=res[0].fn,
         document.getElementById('validationCustom02').value=res[0].ln,
@@ -161,7 +161,7 @@ const check=async()=>{
 }
 check()
 const getUser=()=>{
-    fetch('http://localhost:3000/admin')
+    fetch('https://havmor-server.onrender.com/admin')
     .then((res)=>res.json())
     .then((data)=>{
 

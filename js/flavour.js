@@ -55,11 +55,11 @@ const ui=(data)=>{
 }
 
 const get=async()=>{
-    let res=await GetData('http://localhost:3000/products')
+    let res=await GetData('https://havmor-server.onrender.com/products')
     ui(res)
 }
 const getflav=async(name)=>{
-    let res=await GetData(`http://localhost:3000/products?flavour=${name}`)
+    let res=await GetData(`https://havmor-server.onrender.com/products?flavour=${name}`)
     
     ui(res)
     document.querySelector('#All #cy img').src="https://www.havmor.com/themes/havmornew/images/radio.webp"
@@ -81,7 +81,7 @@ const getflav=async(name)=>{
 
 }
 const getCata=async(name)=>{
-    let res=await GetData(`http://localhost:3000/products?cata=${name}`)
+    let res=await GetData(`https://havmor-server.onrender.com/products?cata=${name}`)
     console.log(name);
     console.log(res);
     ui(res)
