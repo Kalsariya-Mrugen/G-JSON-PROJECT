@@ -160,7 +160,8 @@ const ui2 = (inf) => {
 
     main.append(imgdiv, tit, buybtn);
     main.addEventListener('click',()=>{
-      window.location.href=`../pages/showpro.html?id=${ele.id}`
+      // window.location.href=`../pages/showpro.html?id=${ele.id}`
+      document.querySelector('.checkouts').classList.remove('hidden')
     })
     document.querySelector(".secondpro").append(main);
   });

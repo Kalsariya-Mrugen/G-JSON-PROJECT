@@ -24,7 +24,7 @@ import GetData from "../admin/components/get.js"
 document.querySelector('.main-search-page').classList.add('hidden')
 const ui=(data)=>{
     document.getElementById('sorted-search').innerHTML=""
-    data.splice(0, 5).map((ele,i)=>{
+    data.slice(0, 5).map((ele,i)=>{
         let p=document.createElement('p');
         p.setAttribute('id','Searched_items');
         p.innerHTML=ele.title

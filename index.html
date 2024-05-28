@@ -16,6 +16,7 @@
         <!-- css  -->
         <link rel="stylesheet" href="/admin/css/extra123.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="/css/mediaQuery.css">
         <style>
           .location_icon_sidebar a img,
             .surprise_icon_sidebar a img,
@@ -53,6 +54,11 @@
                 right: 10px;
                 cursor: pointer;
             }
+
+
+          
+            
+            
         </style>
 </head>
 <body>
@@ -122,12 +128,12 @@
             </div>
         </div>
         <div id="bestsellers" style="background-color: #FFFCEF;" class="pb-4">    
-            <section class="container-fluid">
+            <!-- <section class="container-fluid">
                 <h2 class="text-center py-4" style="color: #F3000C; font-size: 48px; font-weight: bolder;">best 
                     <span class="d-block fs-5 fw-normal ms-5 ps-3" style="color: #000000;">SELLERS</span></h2>
                 <div class="ProductList text-center">
-                    <ul class="d-flex">
-                        <li>
+                    <ul class="d-flex justify-content-around ">
+                        <li class="col-md-6 col-12">
                             <div class="ProductListImgWrap ">
                                 <a href="#">
                                     <img src="https://www.havmor.com/sites/default/files/products/Zulubar_.webp" alt="Zulubar ">
@@ -136,7 +142,7 @@
                             <p>Zulubar </p>
                             <span class="buyNowBtn">BUY NOW</span>
                         </li>
-                        <li>
+                        <li class="col-md-6">
                             <div class="ProductListImgWrap">
                                 <a href="#">
                                     <img src="https://www.havmor.com/sites/default/files/products/Aam-Candy-listing.webp" alt="Aam ">
@@ -145,7 +151,7 @@
                             <p>Aam </p>
                             <span class="buyNowBtn">BUY NOW</span>
                         </li>
-                        <li>
+                        <li class="col-md-6">
                             <div class="ProductListImgWrap">
                                 <a href="#">
                                     <img src="https://www.havmor.com/sites/default/files/products/Triple%20Chocolate-00.webp" alt="Triple Chocolate ">
@@ -154,7 +160,7 @@
                             <p>Triple Chocolate </p>
                             <span class="buyNowBtn" >BUY NOW</span>
                         </li>
-                        <li>
+                        <li class="col-md-6">
                             <div class="ProductListImgWrap">
                                 <a href="#">
                                     <img src="https://www.havmor.com/sites/default/files/products/Chocolate%20cone_0.webp" alt="Chocolate Cone ">
@@ -167,7 +173,61 @@
                     </ul>
     
                 </div>
+            </section> -->
+            <section class="container">
+                <h2 class="text-center py-4" style="color: #F3000C; font-size: 48px; font-weight: bolder;">best 
+                    <span class="d-block fs-5 fw-normal ms-5 ps-3" style="color: #000000;">SELLERS</span>
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="ProductList text-center">
+                            <div class="ProductListImgWrap">
+                                <a href="#">
+                                    <img src="https://www.havmor.com/sites/default/files/products/Zulubar_.webp" alt="Zulubar">
+                                </a>
+                            </div>
+                            <p>Zulubar</p>
+                            <span class="buyNowBtn">BUY NOW</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="ProductList text-center">
+                            <div class="ProductListImgWrap">
+                                <a href="#">
+                                    <img src="https://www.havmor.com/sites/default/files/products/Aam-Candy-listing.webp" alt="Aam">
+                                </a>
+                            </div>
+                            <p>Aam</p>
+                            <span class="buyNowBtn">BUY NOW</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="ProductList text-center">
+                            <div class="ProductListImgWrap">
+                                <a href="#">
+                                    <img src="https://www.havmor.com/sites/default/files/products/Triple%20Chocolate-00.webp" alt="Triple Chocolate">
+                                </a>
+                            </div>
+                            <p>Triple Chocolate</p>
+                            <span class="buyNowBtn">BUY NOW</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="ProductList text-center">
+                            <div class="ProductListImgWrap">
+                                <a href="#">
+                                    <img src="https://www.havmor.com/sites/default/files/products/Chocolate%20cone_0.webp" alt="Chocolate Cone">
+                                </a>
+                            </div>
+                            <p>Chocolate Cone</p>
+                            <span class="buyNowBtn">BUY NOW</span>
+                        </div>
+                    </div>
+                </div>
             </section>
+            
+            
+            
             <section class="buyNowPopUp" style="display:none;">
                 <div class="PopUpwrapp">
                     <h2>ENTER CITY</h2>
@@ -245,16 +305,17 @@
             </section>
         
         </div>
-        <div id="knowusbetter" class="knowusbette">
+        <!-- <div id="knowusbetter" class="knowusbette" >
             <div class="container-fluid p-0">
-                <section class="homeProductInfoSec">
+                <section class="homeProductInfoSec" style="height: 100%;">
                     <div class="homeProductInfoSecImg">
                         <img src="https://www.havmor.com/themes/havmornew/images/home-bg-img.webp" alt="">
                     </div>
                     <div class="homeProductInfoSecWrap text-center">
                         <h2  class="text-center py-5" style="color: #FFFFFF; font-size: 48px; font-weight: bolder;">know us
                              <span  class="d-block fs-5 fw-normal" style="margin-left:110px ;" >BETTER</span></h2>
-                        <div class="d-flex justify-content-around">
+
+                        <div class="d-flex justify-content-around ">
                            
                             <div class="homeProductInfoContentWrap">
                                 <div class="homeProductInfoContent">
@@ -262,6 +323,7 @@
                                         alt="">
                                     <h4>About us</h4>
                                 </div>
+                                
                                 <div class="homeProductInfoContentBox ">
                                     <p>Established in the year 1944<br> and now a part of LOTTE Wellfood
                                         Co. Ltd.</p>
@@ -300,12 +362,124 @@
                 </section>
             </div>
         
+        </div> -->
+        
+        <div id="knowusbetter" class="knowusbette position-relative" style="height: 100vh;">
+            <div class="container-fluid p-0 h-100">
+                <section class="homeProductInfoSec h-100 position-relative">
+                    <!-- Background Image -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100">
+                        <img src="https://www.havmor.com/themes/havmornew/images/home-bg-img.webp" alt="Background Image" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                    </div>
+                    <!-- Carousel Content -->
+                    <div class="position-relative h-100 d-lg-none d-md-none pt-5 mt-5">
+                        <div id="homeProductInfoCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#homeProductInfoCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#homeProductInfoCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#homeProductInfoCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="homeProductInfoContentWrap text-center p-3">
+                                        <img src="https://www.havmor.com/themes/havmornew/images/product-info-icon1.webp" alt="About Us" class="d-block mx-auto">
+                                        <h4>About us</h4>
+                                        <p>Established in the year 1944<br> and now a part of LOTTE Wellfood Co. Ltd.</p>
+                                        <a href="./pages/aboutus.html" class="btn btn-danger">KNOW MORE</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="homeProductInfoContentWrap text-center p-3">
+                                        <img src="https://www.havmor.com/themes/havmornew/images/product-info-icon2.webp" alt="Awards" class="d-block mx-auto">
+                                        <h4>Awards</h4>
+                                        <p>Making Waves In The Industry – Our <br> hard work and innovation</p>
+                                        <a href="#" class="btn btn-danger">KNOW MORE</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="homeProductInfoContentWrap text-center p-3">
+                                        <img src="https://www.havmor.com/themes/havmornew/images/product-info-icon3.webp" alt="CSR" class="d-block mx-auto">
+                                        <h4>CSR</h4>
+                                        <p>Giving it back to the world – We <br> are who we are because of your support</p>
+                                        <a href="#" class="btn btn-danger">KNOW MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#homeProductInfoCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#homeProductInfoCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Content (Visible on md lg and above screens) -->
+                    <div class="position-absolute top-0 d-none d-lg-block d-md-block  w-100">
+                        <h2 class="py-5 text-center" style="font-size: 48px; font-weight: bolder;">
+                            know us
+                            <span class="d-block fs-5 fw-normal">BETTER</span>
+                        </h2>
+                        <div class="container w-100">
+                            <div class="row ">
+                           
+                                <div class="homeProductInfoContentWrap col-lg-3 col-md-3">
+                                    <div class="homeProductInfoContent">
+                                        <img src="https://www.havmor.com/themes/havmornew/images/product-info-icon1.webp"
+                                            alt="">
+                                        <h4>About us</h4>
+                                    </div>
+                                    
+                                    <div class="homeProductInfoContentBox ">
+                                        <p>Established in the year 1944<br> and now a part of LOTTE Wellfood
+                                            Co. Ltd.</p>
+                                        <a href="./pages/aboutus.html" class="buyNowBtn">KNOW MORE</a>
+                                    </div>
+                                </div>
+                              <div class="homeProductInfoContentWrap col-lg-3 col-md-3"></div>
+                                <div class="homeProductInfoContentWrap col-lg-3 col-md-3">
+                                    <div class="homeProductInfoContent">
+                                        <img src="https://www.havmor.com/themes/havmornew/images/product-info-icon2.webp"
+                                            alt="">
+                                        <h4>Awards</h4>
+                                    </div>
+                                    <div class="homeProductInfoContentBox">
+                                        <p>Making Waves In The Industry – Our <br> hard work and innovation
+                                        </p>
+                                        <a href="#" class="buyNowBtn">KNOW MORE</a>
+                                    </div>
+                                </div>
+                                <div class="homeProductInfoContentWrap col-lg-3 col-md-3">
+                                    <div class="homeProductInfoContent">
+                                        <img src="https://www.havmor.com/themes/havmornew/images/product-info-icon3.webp"
+                                            alt="">
+                                        <h4>CSR</h4>
+                                    </div>
+                                    <div class="homeProductInfoContentBox">
+                                        <p>Giving it back to the world – We <br> are who we are because of
+                                            your support </p>
+                                        <a href="#" class="buyNowBtn">KNOW  MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
+        
+        
+        
+        
+        
+        
+        
         <div class="">
             <section class="homeFormSec" id="surpriseme">
                 <div class="homeFormSecWrap">
                     <div class="row">
-                        <div class="col-5 p-5">
+                        <div class="col-lg-5 col-md-5 p-5">
                             <div class="homeFormSecLeft">
                                 <h2 class="py-4" style="color: #F3000C; font-size: 48px; font-weight: bolder;">surprise 
                                     <span class="d-block fs-5 text-uppercase fw-normal" style="color: #000000; margin-left: 155px;">me</span></h2>
@@ -317,36 +491,31 @@
                                 <p>Make your party memorable with Havmor ice creams</p>
                             </div>
                         </div>
-                        <div class="col-7 p-5">
+                        <div class="col-lg-7  col-md-7 col-sm-12 p-lg-5 p-md-0">
                             <div class="homeFormSecRight">
                                <div class="row">
-                                <div class="col-8">
-                                    <div class="formWrap  p-5">
-                                        <h5 class="fw-semibold fs-4">Let’s connect<br>
-                                            Drop your queries below
-                                        </h5>
-                
-                                        <form >
+                              
+                                <div class="col-12 col-md-8 order-1 order-md-0 p-lg-3">
+                                    <div class="formWrap p-lg-1">
+                                        <h5 class="fw-semibold fs-4">Let’s connect<br> Drop your queries below</h5>
+                                        <form>
                                             <div>
-                                                <input  type="text" id="name" name="name" placeholder="Name" required="required">
+                                                <input type="text" id="name" name="name" placeholder="Name" required="required" class="form-control mb-3">
                                             </div>
                                             <div>
-                                                <input type="email" id="email-id"
-                                                    name="email_id" placeholder="Email ID" required="required">
-                
+                                                <input type="email" id="email-id" name="email_id" placeholder="Email ID" required="required" class="form-control mb-3">
                                             </div>
-                                            <div class="custom-select-wrapper">
-                                                <select id="service" name="service"  required="required" class="custom-select">
+                                            <div class="custom-select-wrapper mb-3">
+                                                <select id="service" name="service" required="required" class="custom-select form-control">
                                                     <option value="" selected="selected">Select the Service Needed</option>
                                                     <option value="Party Order">Party Order</option>
                                                     <option value="Catering">Catering</option>
                                                 </select>
                                             </div>
-                                            <div class="custom-select-wrapper">
-                                                <select id="state" name="state" c required="required" class="custom-select">
+                                            <div class="custom-select-wrapper mb-3">
+                                                <select id="state" name="state" required="required" class="custom-select form-control">
                                                     <option value="" selected="selected">State</option>
-                                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands
-                                                    </option>
+                                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                                                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                                                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
                                                     <option value="Assam">Assam</option>
@@ -386,27 +555,24 @@
                                                 </select>
                                             </div>
                                             <div>
-                                                <input type="text" id="city" name="city" value=""placeholder="City" required="required">
+                                                <input type="text" id="city" name="city" placeholder="City" required="required" class="form-control mb-3">
                                             </div>
                                             <div>
-                                                <input type="number" id="no-of-guests" name="no_of_guests" value="" step="any" min="1" max="10000" placeholder="Expected Number of Guests" required="required">
+                                                <input type="number" id="no-of-guests" name="no_of_guests" min="1" max="10000" placeholder="Expected Number of Guests" required="required" class="form-control mb-3">
                                             </div>
                                             <div>
-                                                <input placeholder="Select Date" type="date" id="select-date" name="select_date" value=""
-                                                    required="required">
-                
+                                                <input placeholder="Select Date" type="date" id="select-date" name="select_date" required="required" class="form-control mb-3">
                                             </div>
                                             <div>
-                                                <!-- <input type="submit" id="actions-submit" value="Send"> -->
-                                                <button class="btnSubmit">Submit</button>
-                
+                                                <button class="btn btn-danger">Submit</button>
                                             </div>
-                                       
                                         </form>
-                
                                     </div>
                                 </div>
-                                <div class="col-4 d-flex-end p-0">
+                                
+                                
+                                
+                                <div class="col-lg-4  col-md-4 col-sm-12 d-flex justify-content-end align-items-end order-0 order-md-1">
                                     
                                     <div class="formSecImg">
                                         <img src="https://www.havmor.com/themes/havmornew/images/form-icon.webp" alt="">
